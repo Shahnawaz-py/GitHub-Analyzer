@@ -1,0 +1,29 @@
+{
+  "name": "github-analyzer-pro",
+  "version": "1.0.0",
+  "description": "Full-Stack GitHub Analyzer & Developer Intelligence Suite built with Next.js & Express",
+  "scripts": {
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run dev:server\" \"npm run dev:client\"",
+    "start:server": "npm start --prefix server",
+    "start:client": "npm start --prefix client",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "build:client": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "github",
+    "analyzer",
+    "portfolio",
+    "nextjs",
+    "express",
+    "developer-score",
+    "octocat",
+    "fullstack"
+  ],
+  "author": "",
+  "license": "MIT"
+}
